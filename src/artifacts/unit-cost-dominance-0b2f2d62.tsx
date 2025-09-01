@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function UnitCostDominance() {
   const [selectedJob, setSelectedJob] = React.useState('');
   const [hourlyWage, setHourlyWage] = React.useState(25);
