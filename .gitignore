@@ -1,7 +1,9 @@
-.specstory
-.dev.vars
-.local
-.claude/settings.local.json
+# Ignore build output (dist for local only, NOT docs)
+dist
+dist-ssr
+
+# Dependencies
+node_modules
 
 # Logs
 logs
@@ -12,32 +14,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Local env / configs
 *.local
+.dev.vars
+.local
+.specstory
+.claude/settings.local.json
 
 # TypeScript compiled files
-*.js
-*.js.map
-*.d.ts
-
-# BUT keep these essential hand-written files:
-!postcss.config.js
-!tailwind.config.mjs
-!src/vite-env.d.ts
-!scripts/update-config.js
-!scripts/validate-setup.js
-!scripts/config-loader.js
-
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.tsbuildinfo
